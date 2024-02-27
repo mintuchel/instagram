@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="css/login.css">
 </head>
 
+<!-- px : fixed number of px on screen -->
+<!-- % : relative to the size of containing block or parent element -->
+<!-- vh : viewport height -->
+
 <body>
 
     <div class="container">
@@ -72,7 +76,8 @@
             <div class="noid">
                 <span style="font-size: 15px">계정이 없으신가요?</span>
                 <a href="" style="text-decoration: none;">
-                    <span style="font-size: 15px; color: #3aaddb"><b>가입하기 </b></span>
+                    <!-- margin-left 로 띄어쓰기 구현 -->
+                    <span style="font-size: 15px; color: #3aaddb; margin-left: 5px"><b>가입하기 </b></span>
                 </a>
             </div>
 
@@ -81,16 +86,14 @@
             </div>
 
             <div class="image box">
-                <img src="images/googleplay.png" style="width: 150px; height: 40px">
-                <img src="images/microsoft.png" style="width: 120px; height: 40px">
+                <img src="images/googleplay.png" style="width: 15vh; height: 4.5vh">
+                <img src="images/microsoft.png" style="width: 13vh; height: 4.5vh">
             </div>
         </section>
 
     </div>
 
-    <!-- footer -->
     <footer>
-        <!-- 요소 간 간격 띄우기 -->
         <div class="footer">
             <a class="footer_item">Meta</a>
             <a class="footer_item">소개</a>
@@ -111,7 +114,6 @@
             <a class="footer_item">한국어</a>
             <span class="footer_item">© 2024 Instagram from Meta</span>
         </div>
-        <!-- copy right 표기 찾아보기 -->
     </footer>
 
     <!-- button 효과 적용 -->

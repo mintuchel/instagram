@@ -2,13 +2,22 @@
 
 #fading-image{
     position : relative;
-    transform: translate(-100%, 10%);
+    
+    /* moves the element horizontally to the left by 100% of its width and vertically down by 10% of its height*/
+    transform: translate(-67.5%, 3.5%);
+    
+    /* fade in fade out 구현하기 위해 필요함 */
     opacity: 0;
     transition: opacity 1s ease-in-out;
+
+    width : 60%;
+    /* height : auto 하면 width 줄어든 비율에 맞춰 줄여줌 */
+    height : 87%;
 }
 
 #phone{
     position : relative;
+    transform : translate(30%, 0%);
 }
 
 /* --------------- */

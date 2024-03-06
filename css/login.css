@@ -2,24 +2,24 @@
 
 #fading-image{
     position : relative;
-    top: 3vh;
-    right: 17.4vh;
+    top: 2vh;
+    right: 20vh;
     /*transform: translate(-67.5%, 3.5%);*/
     
     /* fade in fade out 구현하기 위해 필요함 */
     opacity: 0;
     transition: opacity 1s ease-in-out;
 
-    width : 60%;
+    width : 50vh;
     /* height : auto 하면 width 줄어든 비율에 맞춰 줄여줌 */
-    height : 87%;
+    height : 56vh;
 }
 
 #phone{
     position: relative;
     /*transform : translate(30%, 0%);*/
-    top: 1vh;
     left: 12vh;
+    height: 65vh;
 }
 
 /* --------------- */

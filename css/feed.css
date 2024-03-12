@@ -1,0 +1,103 @@
+.container{
+    display: flex;
+    /*float: left;
+    flex-direction: row; */
+    width: 100%;
+    height: 100vh;
+    /*border: 3px solid black;*/
+}
+
+.container .leftsb{
+    position: fixed;
+    top: 0;
+    left:0;
+    width : 20%;
+    height: 100vh;
+    border: 3px solid red;
+}
+
+.container .leftsb .header{
+    margin: 1vh;
+    padding-bottom: 10vh;
+    border: 3px solid aqua
+
+}
+
+.container .leftsb .menu{
+    padding: 0.8rem 1rem;
+    border: 3px solid black;
+}
+
+.container .leftsb .menu:hover{
+    background-color: lightgrey;
+    font:bold;
+}
+
+.container .middle{
+    position: fixed;
+    top:0;
+    left: 20%;
+    right: 20%;
+    height: 100vh;
+    border: 3px solid blue;
+}
+
+.leftsb .post_button_box {
+    display: flex;
+    padding-top: 20vh;
+    margin:1vh;
+    height: 3vh;
+    border: 3px solid red;
+}
+
+.leftsb .post_button_box .post_btn {
+    width: 100%;
+    height: 100%;
+    background-color: #bfdffd;
+    border: 1px solid #bfdffd;
+    border-radius: 4px;
+}
+
+.leftsb .post_button_box .post_btn:hover{
+    background-color: #1c7ed6;
+}
+
+.container .rightsb{
+    position:fixed;
+    top:0;
+    right: 0;
+    width : 20%;
+    height: 100vh;
+    border: 3px solid red;
+}
+
+.rightsb .user_box{
+    display: flex;
+    flex-direction: row;
+    border: 3px solid green;
+    width: 100;
+    height: 8vh;
+}
+
+.rightsb .user_box .face{
+    /*border: 3px solid black;*/
+}
+
+.rightsb .user_box .infos{
+    padding-left: 1rem;
+    flex-direction: column;
+    /*border: 3px solid black;*/
+    width:50%
+}
+
+.rightsb .user_box .button_box{
+    display:flex;
+    /*border: 3px solid red;*/
+    justify-content: center;
+    align-items: center;
+    width: 40%
+}
+
+.rightsb .user_box .button_box .follow_button:hover{
+    background-color: #1c7ed6;
+}

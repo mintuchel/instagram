@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- for vh -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="css/feed.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="leftsb">
+            <header class="header">
+                <img src="images/instagram.png" style="max-width: 80%; max-height :30%">
+            </header>
+
+            <div class="menu">
+                <img src="images/home.png" style="max-width: 50px; max-height:30px">
+                <a href="" style="text-decoration: solid;">
+                    <span style="margin-left:10px">홈</span>
+                </a>
+            </div>
+            <div class="menu">
+                <img src="images/search.png" style="max-width: 50px; max-height:30px">
+                <a href="" style="text-decoration: solid;">
+                    <span style="margin-left:10px">검색</span>
+                </a>
+            </div>
+            <div class="menu">
+                <img src="images/message.png" style="max-width: 50px; max-height:30px">
+                <a href="" style="text-decoration: solid;">
+                    <span style="margin-left:10px">메세지</span>
+                </a>
+            </div>
+            <div class="menu">
+                <img src="images/heart.png" style="max-width: 50px; max-height:30px">
+                <a href="" style="text-decoration: solid;">
+                    <span style="margin-left:10px">알림</span>
+                </a>
+            </div>
+
+            <div class="post_button_box">
+                <button type="button" class="post_btn" disabled="disabled">
+                    <span style="font:bold">게시하기</span>
+                </button>
+            </div>
+
+            <div class="menu">
+                <img src="images/heart.png" style="max-width: 50px; max-height:30px">
+                <a href="" style="text-decoration: solid;">
+                    <span style="margin-left:10px">Threads</span>
+                </a>
+            </div>
+            <div class="menu">
+                <img src="images/heart.png" style="max-width: 50px; max-height:30px">
+                <a href="" style="text-decoration: solid;">
+                    <span style="margin-left:10px">더보기</span>
+                </a>
+            </div>
+        </aside>
+
+        <div class="middle">
+
+        </div>
+
+        <div class="rightsb">
+            <script>
+
+                // Repeat the code 5 times
+                for (let i = 0; i < 5; i++) {
+                    // Write the HTML code for user box
+                    document.write(`
+                    <div class="user_box">
+                    <div class="face">
+                        <img src="images/heart.png" style="max-width: 50px; max-height:30px">
+                    </div>
+
+                    <div class="infos">
+                        <span style="font-size: 13px; font:bold; color: #003768">faker</span><br>
+                        <span style="font-size: 12px; color: #003768">회원님을 위한 추천</span>
+                    </div>
+
+                    <div class="button_box">
+                        <button type="button" class="follow_button" disabled="disabled">
+                            <span>팔로우</span>
+                        </button>
+                    </div>
+                    </div>
+                    `);
+                }
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

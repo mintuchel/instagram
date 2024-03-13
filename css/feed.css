@@ -101,3 +101,55 @@
 .rightsb .user_box .button_box .follow_button:hover{
     background-color: #1c7ed6;
 }
+
+/* 피드창 위쪽 공백 */
+.middle .none{
+    width: auto;
+    height:40px;
+    padding-top:75px;
+    border: 3px solid black;
+}
+
+.middle .feedhead{
+    height: 60px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid black;
+}
+
+.middle .feedhead .feed_profile{
+    display: flex;
+    align-items: center;
+    border: 3px solid red;
+    width: 10vh;
+}
+
+.middle .feedhead .feed_profile .profile_img{
+    width:32px;
+    height:32px;
+    border : 1px solid #fafafa;
+    border-radius: 100%;
+}
+
+.middle .feedhead .profile_btn{
+    width: 5vh;
+    height: 3vh;
+    padding-right: 0;
+    text-align:center;
+}
+
+.middle .feed_picture{
+    width: 100%;
+    display: block;
+}
+
+.middle .feed_bottom{
+    height: 20vh;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid black;
+}

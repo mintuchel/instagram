@@ -18,30 +18,41 @@
             </header>
 
             <div class="menu">
-                <img src="images/home.png" style="max-width: 50px; max-height:30px">
-                <a href="" style="text-decoration: solid;">
+                <img src="images/feed/home.png" style="max-width: 50px; max-height:30px">
+                <a href="" style="text-decoration: none; color:inherit">
                     <span style="margin-left:10px">홈</span>
                 </a>
             </div>
             <div class="menu">
-                <img src="images/search.png" style="max-width: 50px; max-height:30px">
-                <a href="" style="text-decoration: solid;">
+                <img src="images/feed/explore.png" style="max-width: 50px; max-height:30px">
+                <a href="" style="text-decoration: none; color:inherit">
                     <span style="margin-left:10px">검색</span>
                 </a>
             </div>
             <div class="menu">
-                <img src="images/message.png" style="max-width: 50px; max-height:30px">
-                <a href="" style="text-decoration: solid;">
+                <img src="images/feed/compass.png" style="max-width: 50px; max-height:30px">
+                <a href="" style="text-decoration: none; color:inherit">
+                    <span style="margin-left:10px">탐색 탭</span>
+                </a>
+            </div>
+            <div class="menu">
+                <img src="images/feed/send.png" style="max-width: 50px; max-height:30px">
+                <a href="" style="text-decoration: none; color:inherit">
                     <span style="margin-left:10px">메세지</span>
                 </a>
             </div>
             <div class="menu">
-                <img src="images/heart.png" style="max-width: 50px; max-height:30px">
-                <a href="" style="text-decoration: solid;">
+                <img src="images/feed/heart.png" style="max-width: 50px; max-height:30px">
+                <a href="" style="text-decoration: none; color: inherit">
                     <span style="margin-left:10px">알림</span>
                 </a>
             </div>
-
+            <div class="menu">
+                <img src="images/feed/add.png" style="max-width: 50px; max-height:30px">
+                <a href="" style="text-decoration: none; color: inherit">
+                    <span style="margin-left:10px">만들기</span>
+                </a>
+            </div>
             <div class="post_button_box">
                 <button type="button" class="post_btn" disabled="disabled">
                     <span style="font:bold">게시하기</span>
@@ -49,14 +60,14 @@
             </div>
 
             <div class="menu">
-                <img src="images/heart.png" style="max-width: 50px; max-height:30px">
-                <a href="" style="text-decoration: solid;">
-                    <span style="margin-left:10px">Threads</span>
+                <img src="images/feed/user.png" style="max-width: 50px; max-height:30px">
+                <a href="" style="text-decoration: none; color:inherit">
+                    <span style="margin-left:10px">사용자</span>
                 </a>
             </div>
             <div class="menu">
-                <img src="images/heart.png" style="max-width: 50px; max-height:30px">
-                <a href="" style="text-decoration: solid;">
+                <img src="images/feed/more.png" style="max-width: 50px; max-height:30px">
+                <a href="" style="text-decoration: none; color:inherit">
                     <span style="margin-left:10px">더보기</span>
                 </a>
             </div>
@@ -65,31 +76,29 @@
         <div class="middle">
             <div class="none"></div>
             <div class="main_body"></div>
-
-            <article>
-                <header class="feedhead">
-                    <div class="feed_profile">
-                        <a href="user.html">
-                            <img class="profile_img" src="images/profile.png">
-                            <span class="user_id">user</span>
-                        </a>
-                    </div>
-                    <button type="button" class="profile_btn">
-                        <span>btn</span>
-                    </button>
-                </header>
-
-                <div>
-                    <img class="feed_picture" src="images/picture.png">
-                </div>
-
-                <div class="feed_bottom">
-
-                </div>
-            </article>
+        
+            <script>
+                for (let i = 0; i < 5; i++) {
+                    document.write('<article>' +
+                        '<header class="feedhead">' +
+                        '<img class="profile_img" src="images/profile.png">' +
+                        '<span class="user_id">user</span>' +
+                        '<button type="button" class="profile_btn">' +
+                        '<span>X</span>' +
+                        '</button>' +
+                        '</header>' +
+                        '<div>' +
+                        '<img class="feed_picture" src="images/picture.png">' +
+                        '</div>' +
+                        '<div class="feed_bottom">' +
+                        '</div>' +
+                        '</article>');
+                }
+            </script>
         </div>
+        
 
-        <div class="rightsb">
+        <div class="rbox">
             <script>
 
                 // Repeat the code 5 times
@@ -98,7 +107,7 @@
                     document.write(`
                     <div class="user_box">
                     <div class="face">
-                        <img src="images/heart.png" style="max-width: 50px; max-height:30px">
+                        <img src="images/profile.png" style="max-width: 50px; max-height:30px">
                     </div>
 
                     <div class="infos">

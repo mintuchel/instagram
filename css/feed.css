@@ -1,153 +1,159 @@
-.container{
+.container {
     display: flex;
     /*float: left;
     flex-direction: row; */
     width: 100%;
-    height: 100vh;
+    overflow-y: auto;
     /*border: 3px solid black;*/
 }
 
-.container .leftsb{
+.leftsb {
     position: fixed;
+    /* 시작 위치 */
     top: 0;
-    left:0;
-    width : 20%;
+    left: 0;
+    width: 15%;
     height: 100vh;
-    border: 3px solid red;
+    border-right: 3px solid lightgrey;
 }
 
-.container .leftsb .header{
+.container .leftsb .header {
     margin: 1vh;
-    padding-bottom: 10vh;
-    border: 3px solid aqua
-
+    padding-bottom: 5vh;
+    /*border: 3px solid aqua*/
 }
 
-.container .leftsb .menu{
+.container .leftsb .menu {
     padding: 0.8rem 1rem;
-    border: 3px solid black;
+    border-radius: 15px;
+    /*border: 3px solid black;*/
+    margin: 3px;
 }
 
-.container .leftsb .menu:hover{
+.container .leftsb .menu:hover {
     background-color: lightgrey;
-    font:bold;
+    font: bold;
 }
 
-.container .middle{
-    position: fixed;
-    top:0;
-    left: 20%;
-    right: 20%;
-    height: 100vh;
-    border: 3px solid blue;
-}
-
-.leftsb .post_button_box {
+.container .leftsb .post_button_box {
     display: flex;
-    padding-top: 20vh;
-    margin:1vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    margin: 1vh;
     height: 3vh;
-    border: 3px solid red;
+    /*border: 3px solid red;*/
 }
 
-.leftsb .post_button_box .post_btn {
+.container .leftsb .post_button_box .post_btn {
     width: 100%;
-    height: 100%;
+    height: 3.5vh;
     background-color: #bfdffd;
     border: 1px solid #bfdffd;
     border-radius: 4px;
 }
 
-.leftsb .post_button_box .post_btn:hover{
+.container .middle {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    right: 40%;
+    height: auto;
+    border: 3px solid blue;
+}
+
+.leftsb .post_button_box .post_btn:hover {
     background-color: #1c7ed6;
 }
 
-.container .rightsb{
-    position:fixed;
-    top:0;
-    right: 0;
-    width : 20%;
-    height: 100vh;
+.container .rbox {
+    position: absolute;
+    top: 4vh;
+    right: 20vh;
+    width: 18%;
+    height: auto;
+    /* 객체 맞게 height 설정 */
     border: 3px solid red;
 }
 
-.rightsb .user_box{
+.rbox .user_box {
     display: flex;
     flex-direction: row;
-    border: 3px solid green;
+    /*border: 3px solid green;*/
     width: 100;
     height: 8vh;
 }
 
-.rightsb .user_box .face{
-    /*border: 3px solid black;*/
+.rbox .user_box .face {
+    border: 1px solid #fafafa;
+    border-radius: 100%;
 }
 
-.rightsb .user_box .infos{
+.rbox .user_box .infos {
     padding-left: 1rem;
     flex-direction: column;
     /*border: 3px solid black;*/
-    width:50%
+    width: 50%
 }
 
-.rightsb .user_box .button_box{
-    display:flex;
+.rbox .user_box .button_box {
+    display: flex;
     /*border: 3px solid red;*/
     justify-content: center;
     align-items: center;
     width: 40%
 }
 
-.rightsb .user_box .button_box .follow_button:hover{
+.rbox .user_box .button_box .follow_button:hover {
     background-color: #1c7ed6;
 }
 
 /* 피드창 위쪽 공백 */
-.middle .none{
+.middle .none {
     width: auto;
-    height:40px;
-    padding-top:75px;
-    border: 3px solid black;
+    height: 40px;
+    padding-top: 75px;
+    /*border: 3px solid black;*/
 }
 
-.middle .feedhead{
+.feedhead {
     height: 60px;
-    padding: 0 16px;
+    padding: 0 5px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     border: 3px solid black;
 }
 
-.middle .feedhead .feed_profile{
-    display: flex;
-    align-items: center;
-    border: 3px solid red;
-    width: 10vh;
-}
-
-.middle .feedhead .feed_profile .profile_img{
-    width:32px;
-    height:32px;
-    border : 1px solid #fafafa;
+.feedhead .profile_img {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #fafafa;
     border-radius: 100%;
+    /*원형으로*/
+    border: 3px solid red;
 }
 
-.middle .feedhead .profile_btn{
-    width: 5vh;
-    height: 3vh;
-    padding-right: 0;
-    text-align:center;
+.feedhead .user_id {
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(36, 36, 36);
 }
 
-.middle .feed_picture{
+.feedhead .profile_btn {
+    margin-left: auto; /*이거 안쓰고 어케 오른쪽으로 붙임? */
+    width: 4vh;
+    height: 4vh;
+    text-align: center;
+}
+
+.middle .feed_picture {
     width: 100%;
-    height:auto;
-    max-height:350px;
+    height: auto;
+    max-height: 350px;
     display: block;
 }
 
-.middle .feed_bottom{
+.middle .feed_bottom {
     height: 20vh;
     padding: 0 16px;
     display: flex;

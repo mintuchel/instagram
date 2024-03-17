@@ -7,7 +7,7 @@ const button = document.querySelector(".btn");
 
 const fadingImage = document.getElementById("fading-image");
 
-let pictures = ["images/insta1.png", "images/insta2.png", "images/insta3.png", "images/insta4.png"];
+let pictures = ["images/login/insta1.png", "images/login/insta2.png", "images/login/insta3.png", "images/login/insta4.png"];
 let idx = 0;
 
 let fadeInComplete = false;

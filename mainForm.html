@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- for vh -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="css/mainForm.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="leftsb">
+            <header class="header">
+                <a href>
+                    <img src="images/main/instagram.png" style="max-width: 80%; max-height :30%">
+                </a>
+            </header>
+
+            <a href="" style="text-decoration: none; color:inherit;">
+                <div class="menu">
+                    <img src="images/main/home.png" style="max-width: 50px; max-height:30px">
+                    <span style="margin-left:10px;">홈</span>
+                </div>
+            </a>
+
+            <a href="" style="text-decoration: none; color:inherit;">
+                <div class="menu">
+                    <img src="images/main/explore.png" style="max-width: 50px; max-height:30px">
+                    <span style="margin-left:10px">검색</span>
+                </div>
+            </a>
+
+            <a href="" style="text-decoration:none; color:inherit;">
+                <div class="menu">
+                    <img src="images/main/compass.png" style="max-width: 50px; max-height:30px">
+                    <span style="margin-left:10px">탐색 탭</span>
+                </div>
+            </a>
+
+            <a href="" style="text-decoration:none; color:inherit;">
+                <div class="menu">
+                    <img src="images/main/send.png" style="max-width: 50px; max-height:30px">
+                    <span style="margin-left:10px">메세지</span>
+                </div>
+            </a>
+
+            <a href="" style="text-decoration:none; color:inherit">
+                <div class="menu">
+
+                    <img src="images/main/heart.png" style="max-width: 50px; max-height:30px">
+                    <span style="margin-left:10px">알림</span>
+
+                </div>
+            </a>
+
+            <a href="" style="text-decoration:none; color:inherit">
+                <div class="menu">
+
+                    <img src="images/main/add.png" style="max-width: 50px; max-height:30px">
+                    <span style="margin-left:10px">만들기</span>
+                </div>
+            </a>
+
+            <div class="post_button_box">
+                <button type="button" class="post_btn" disabled="disabled">
+                    <span style="font-weight: 900; color:black;">게시하기</span>
+                </button>
+            </div>
+
+            <a href="" style="text-decoration:none; color:inherit">
+                <div class="menu">
+                    <img src="images/main/user.png" style="max-width: 50px; max-height:30px">
+                    <span style="margin-left:10px">사용자</span>
+                </div>
+            </a>
+
+            <a href="" style="text-decoration: none; color:inherit">
+                <div class="menu">
+                    <img src="images/main/more.png" style="max-width: 50px; max-height:30px">
+                    <span style="margin-left:10px">더보기</span>
+                </div>
+            </a>
+        </aside>
+
+        <div class="middle">
+            <section class="topbar">
+                <script>
+                    for (let i = 0; i < 6; i++) {
+                        document.write('<div class="storybox">' +
+                            '<div class="user_img">' +
+                            '<img src="images/main/user.png" style="width:100%; height:auto;">' +
+                            '</div>' +
+                            '<div class="user_id">' +
+                            '<span>USER</span>' +
+                            '</div>' +
+                            '</div>');
+                    }
+                </script>
+
+            </section>
+
+            <script>
+                for (let i = 0; i < 5; i++) {
+                    document.write('<article>' +
+                        '<header class="feedhead">' +
+                        '<img class="profile_img" src="images/main/profile.png">' +
+                        '<span class="user_id">user</span>' +
+                        '<button type="button" class="profile_btn">' +
+                        '<span style="color:white">X</span>' +
+                        '</button>' +
+                        '</header>' +
+                        '<div>' +
+                        '<img class="feed_picture" src="images/main/picture.png">' +
+                        '</div>' +
+                        '<div class="feed_bottom">' +
+                        '</div>' +
+                        '</article>');
+                }
+            </script>
+        </div>
+
+
+        <div class="rbox">
+            <script>
+                document.write(`
+                    <div class="user_box">
+                    <div class="face">
+                        <img src="images/main/user.png"  style="max-width: 50px; max-height:30px">
+                    </div>
+
+                    <div class="infos">
+                        <span style="font-size: 13px; font:bold; color: #003768">faker</span><br>
+                        <span style="font-size: 12px; color: #003768">회원님을 위한 추천</span>
+                    </div>
+
+                    <div class="button_box">
+                        <button type="button" class="follow_button" disabled="disabled">
+                            <span>팔로우</span>
+                        </button>
+                    </div>
+                    </div>
+
+                    <div class="recommend_box">
+                        <span style="font-size:15px; font-weight:900; color: #808080; position:absolute; left:0.5rem">회원님을 위한 추천</span>
+                        <span style="font-size:13px; font-weight:900; color: #000000; position:absolute; right:0.5rem;">모두보기</span>
+                    </div>
+                `);
+
+                // Repeat the code 5 times
+                for (let i = 0; i < 4; i++) {
+                    // Write the HTML code for user box
+                    document.write(`
+                    <div class="user_box">
+                    <div class="face">
+                        <img src="images/main/user.png"  style="max-width: 50px; max-height:30px">
+                    </div>
+
+                    <div class="infos">
+                        <span style="font-size: 13px; font:bold; color: #003768">faker</span><br>
+                        <span style="font-size: 12px; color: #003768">회원님을 위한 추천</span>
+                    </div>
+
+                    <div class="button_box">
+                        <button type="button" class="follow_button" disabled="disabled">
+                            <span>팔로우</span>
+                        </button>
+                    </div>
+                    </div>
+                    `);
+                }
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

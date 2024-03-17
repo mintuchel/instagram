@@ -24,10 +24,13 @@
 }
 
 .container .leftsb .menu {
+    display:flex;
+    align-items: center;
     padding: 0.8rem 1rem;
     border-radius: 15px;
     /*border: 3px solid black;*/
     margin: 3px;
+    font-weight: 500;
 }
 
 .container .leftsb .menu:hover {
@@ -65,11 +68,11 @@
     background-color: #1c7ed6;
 }
 
-.container .rbox {
+.rbox {
     position: absolute;
     top: 4vh;
     right: 20vh;
-    width: 18%;
+    width: 20%;
     height: auto;
     /* 객체 맞게 height 설정 */
     border: 3px solid red;
@@ -77,14 +80,27 @@
 
 .rbox .user_box {
     display: flex;
-    flex-direction: row;
-    /*border: 3px solid green;*/
+    align-items: center;
+    justify-content: center;
+    border: 3px solid green;
     width: 100;
     height: 8vh;
+    padding-left: 1rem;
+}
+
+.rbox .recommend_box{
+    display: flex;
+    position: relative;
+    width: 100;
+    height: 4vh;
+    align-items:center;
 }
 
 .rbox .user_box .face {
+    width: 32px;
+    height: 32px;
     border: 1px solid #fafafa;
+    /*border: 1px solid black;*/
     border-radius: 100%;
 }
 
@@ -107,12 +123,40 @@
     background-color: #1c7ed6;
 }
 
-/* 피드창 위쪽 공백 */
-.middle .none {
+/* 스토리 바 */
+.middle .topbar {
+    display:flex;
+    justify-content: space-between;
     width: auto;
-    height: 40px;
-    padding-top: 75px;
+    height: 10vh;
     /*border: 3px solid black;*/
+}
+
+.topbar .storybox{
+    display: flex;
+    flex-direction: column;
+    width:9vh;
+    height:auto;
+    /*border: 3px solid black;*/
+    align-items: center;
+}
+
+.storybox .user_img{
+    width: 6vh;
+    height: 6vh;
+    border: 3px solid green;
+    border-radius: 100%;
+    margin-top : 0.5rem;
+}
+
+.storybox .user_id{
+    width: 6vh;
+    height: 3vh;
+    /*border: 3px solid red;*/
+    font-weight: 800;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 0.2rem;
 }
 
 .feedhead {
@@ -144,6 +188,11 @@
     width: 4vh;
     height: 4vh;
     text-align: center;
+    font-size: 16px;
+    font-weight:500;
+    background-color: red;
+    border-radius:30%;
+    border:none;
 }
 
 .middle .feed_picture {

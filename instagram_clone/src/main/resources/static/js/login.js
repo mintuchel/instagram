@@ -2,6 +2,7 @@
 // #은 각 요소의 id로 찾겠다는 뜻임. 무조건 붙여줘야함
 const inputId = document.querySelector("#id");
 const inputPassword = document.querySelector("#password");
+
 // .은 각 요소의 class로 찾겠다는 뜻임
 const button = document.querySelector(".btn");
 

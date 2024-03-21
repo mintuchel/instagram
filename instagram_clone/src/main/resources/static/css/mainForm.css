@@ -29,8 +29,9 @@
     padding: 0.8rem 1rem;
     border-radius: 15px;
     /*border: 3px solid black;*/
-    margin: 3px;
     font-weight: 500;
+    margin:3px;
+
 }
 
 .container .leftsb .menu:hover {
@@ -44,7 +45,6 @@
     padding-bottom: 10vh;
     margin: 1vh;
     height: 3vh;
-    /*border: 3px solid red;*/
 }
 
 .container .leftsb .post_button_box .post_btn {
@@ -55,13 +55,16 @@
     border-radius: 4px;
 }
 
+.container .leftsb .post_button_box .post_btn:hover {
+    cursor:pointer;
+}
+
 .container .middle {
     position: absolute;
     top: 0;
     left: 30%;
     right: 40%;
     height: auto;
-    border: 3px solid blue;
 }
 
 .leftsb .post_button_box .post_btn:hover {
@@ -75,14 +78,12 @@
     width: 20%;
     height: auto;
     /* 객체 맞게 height 설정 */
-    border: 3px solid red;
 }
 
 .rbox .user_box {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px solid green;
     width: 100;
     height: 8vh;
     padding-left: 1rem;
@@ -119,8 +120,17 @@
     width: 40%
 }
 
+.rbox .user_box .button_box .follow_button{
+    border:#fafafa;
+    background-color: inherit;
+    font-style: normal;
+    font-weight: 800;
+    color:#1c7ed6;
+}
+
 .rbox .user_box .button_box .follow_button:hover {
-    background-color: #1c7ed6;
+    color:navy;
+    cursor:pointer;
 }
 
 /* 스토리 바 */
@@ -144,7 +154,6 @@
 .storybox .user_img{
     width: 6vh;
     height: 6vh;
-    border: 3px solid green;
     border-radius: 100%;
     margin-top : 0.5rem;
 }
@@ -152,7 +161,6 @@
 .storybox .user_id{
     width: 6vh;
     height: 3vh;
-    /*border: 3px solid red;*/
     font-weight: 800;
     font-size: 14px;
     text-align: center;
@@ -164,7 +172,6 @@
     padding: 0 5px;
     display: flex;
     align-items: center;
-    border: 3px solid black;
 }
 
 .feedhead .profile_img {
@@ -173,7 +180,7 @@
     border: 1px solid #fafafa;
     border-radius: 100%;
     /*원형으로*/
-    border: 3px solid red;
+    border: 3px solid #fafafa;
 }
 
 .feedhead .user_id {
@@ -183,8 +190,10 @@
     color: rgb(36, 36, 36);
 }
 
-.feedhead .profile_btn {
+.feedhead .delete_btn {
     margin-left: auto; /*이거 안쓰고 어케 오른쪽으로 붙임? */
+    /* position:absolute; */
+    /* right: 10px; */
     width: 4vh;
     height: 4vh;
     text-align: center;
@@ -195,18 +204,51 @@
     border:none;
 }
 
+.feedhead .delete_btn:hover{
+    cursor: pointer;
+    background-color: palevioletred;
+}
+
 .middle .feed_picture {
     width: 100%;
-    height: auto;
-    max-height: 350px;
+    height: 450px;
+    max-height: 450px;
     display: block;
+    padding-bottom:5px;
 }
 
 .middle .feed_bottom {
     height: 20vh;
-    padding: 0 16px;
-    display: flex;
+    border-bottom: 3px solid black;
+}
+
+.feed_icons{
+    display:flex;
     align-items: center;
-    justify-content: space-between;
-    border: 3px solid black;
+    height: 4vh;
+}
+
+.feedicon{
+    width: 28px;
+    height: 28px;
+    border: 1px solid #fafafa;
+    padding-right: 5px;
+}
+
+.feed_likes{
+    height: 3vh;
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+
+.feed_header{
+    height: 3vh;
+}
+
+.feed_getcomments{
+    height: 3vh;
+}
+
+.feed_writecomments{
+    height: 3vh;
 }

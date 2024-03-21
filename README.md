@@ -1,1 +1,1 @@
-Let's make Instagram using HTML, CSS, JS and Spring
+<p>$\textsf{let's\ make\ instagram\ using\ HTML,\ CSS,\ JS\ and\ Spring}$</p>

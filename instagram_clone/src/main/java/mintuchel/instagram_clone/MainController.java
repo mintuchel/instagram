@@ -18,7 +18,7 @@ public class MainController {
         return "html/loginForm";
     }
 
-    @PostMapping("/main")
+    @GetMapping("/main")
     String feedPage(@RequestParam("user_id") String userId, Model model){
         log.info("main page");
         log.info("userId: {}", userId);

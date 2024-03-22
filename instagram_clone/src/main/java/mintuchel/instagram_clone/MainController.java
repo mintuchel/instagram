@@ -18,11 +18,10 @@ public class MainController {
         return "html/loginForm";
     }
 
-    @GetMapping("/main")
+    @PostMapping("/main")
     String feedPage(@RequestParam("user_id") String userId, Model model){
         log.info("main page");
         log.info("userId: {}", userId);
-
         model.addAttribute("userId", userId);
         return "html/mainForm";
     }

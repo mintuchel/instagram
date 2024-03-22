@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -72,7 +72,7 @@
         <a href="" style="text-decoration:none; color:inherit">
             <div class="menu">
                 <img src="images/main/user.png" style="max-width: 50px; max-height:30px">
-                <span style="margin-left:10px">사용자</span>
+                <span style="margin-left:10px" th:text="${userId}"></span>
             </div>
         </a>
 
@@ -142,39 +142,38 @@
     </div>
 
     <div class="rbox">
+        <!-- thymeleaf 는 script 안에서 적용안됨 -->
+        <div class="user_box">
+            <div class="face">
+                <img src="images/main/user.png"  style="max-width: 50px; max-height:30px">
+            </div>
+
+            <div class="infos">
+                <span style="font-size: 13px; font:bold; color: #003768" th:text="${userId}"></span><br>
+                <span style="font-size: 12px; color: #003768">회원님을 위한 추천</span>
+            </div>
+
+            <div class="button_box">
+                <button type="button" class="follow_button" disabled="disabled">
+                    <span>전환</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="recommend_box">
+            <span style="font-size:15px; font-weight:900; color: #808080; position:absolute; left:0.5rem">
+                <a href="" style="text-decoration:none; color:inherit">
+                    회원님을 위한 추천
+                </a>
+            </span>
+            <span style="font-size:13px; font-weight:900; color: #000000; position:absolute; right:0.5rem;">
+                <a href="" style="text-decoration:none; color:inherit">
+                    모두보기
+                </a>
+            </span>
+        </div>
+
         <script>
-                document.write(`
-                    <div class="user_box">
-                    <div class="face">
-                        <img src="images/main/user.png"  style="max-width: 50px; max-height:30px">
-                    </div>
-
-                    <div class="infos">
-                        <span style="font-size: 13px; font:bold; color: #003768">user</span><br>
-                        <span style="font-size: 12px; color: #003768">회원님을 위한 추천</span>
-                    </div>
-
-                    <div class="button_box">
-                        <button type="button" class="follow_button" disabled="disabled">
-                            <span>전환</span>
-                        </button>
-                    </div>
-                    </div>
-
-                    <div class="recommend_box">
-                        <span style="font-size:15px; font-weight:900; color: #808080; position:absolute; left:0.5rem">
-                            <a href="" style="text-decoration:none; color:inherit">
-                                회원님을 위한 추천
-                            </a>
-                        </span>
-                        <span style="font-size:13px; font-weight:900; color: #000000; position:absolute; right:0.5rem;">
-                            <a href="" style="text-decoration:none; color:inherit">
-                                모두보기
-                            </a>
-                        </span>
-                    </div>
-                `);
-
                 // Repeat the code 5 times
                 for (let i = 0; i < 4; i++) {
                     // Write the HTML code for user box
